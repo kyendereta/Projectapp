@@ -1,5 +1,12 @@
 require 'sinatra'
 
 get '/' do
-'Hello, voter!'
+erb :index
 end
+
+Choices = {
+    'HAM' => 'Hamburger',
+    'PIZ' => 'Pizza',
+    'CUR' => 'Curry',
+    'NOO' => 'Noodles',
+}
